@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./app.js"></script>
+    <!-- <script defer src="./app2.js"></script> -->
+  </head>
+
+  <body>
+    <div class="menu-screen">
+      <div class="logo">TIC TAC TOE GAME</div>
+      <div class="player-menu">
+        <div class="player-mark-header">PICK PLAYER 1'S MARK</div>
+        <div class="players-names">
+          <label for="player1Name"
+            >Player 1<input class="player1Name name" id="player1Name"
+          /></label>
+          <label for="player2Name"
+            >Player 2<input class="player2Name name" id="player2Name"
+          /></label>
+        </div>
+        <div class="marks">
+          <div class="mark x choosen" id="x"></div>
+          <div class="mark circle" id="circle"></div>
+        </div>
+        <div class="menu-text">REMEMBER X GOES FIRST</div>
+      </div>
+      <button class="btn new-game-cpu">NEW GAME (VS CPU)</button>
+      <button class="btn new-game-pvp">NEW GAME (VS PLAYER)</button>
+    </div>
+
+    <div class="content">
+      <div class="nav">
+        <button class="btn quit">QUIT</button>
+        <div class="turn"><span>X</span> TURN</div>
+        <button class="btn reset">RESET</button>
+      </div>
+      <div class="board">
+        <div class="field" id="0"></div>
+        <div class="field" id="1"></div>
+        <div class="field" id="2"></div>
+        <div class="field" id="3"></div>
+        <div class="field" id="4"></div>
+        <div class="field" id="5"></div>
+        <div class="field" id="6"></div>
+        <div class="field" id="7"></div>
+        <div class="field" id="8"></div>
+      </div>
+      <div class="scores">
+        <div class="player-score score-container">
+          <div class="score-owner">YOU</div>
+          <div class="score score-player">0</div>
+        </div>
+        <div class="ties score-container">
+          <div class="score-owner">TIES</div>
+          <div class="score score-ties">0</div>
+        </div>
+        <div class="cpu-score score-container">
+          <div class="score-owner">CPU</div>
+          <div class="score score-cpu">0</div>
+        </div>
+      </div>
+      <div class="winner-screen hidden">
+        <div class="winner">
+          <div class="winner-text">YOU WON!</div>
+          <div class="winner-mark">X TAKES THE ROUND</div>
+          <div class="buttons">
+            <button class="btn quit">QUIT</button>
+            <button class="btn next-round">NEXT ROUND</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
