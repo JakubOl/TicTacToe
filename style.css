@@ -14,7 +14,7 @@
 :root {
   --field-size: 10rem;
   --x-size: calc(0.4 * var(--field-size));
-  --circle-size: calc(0.9 * var(--field-size));
+  --o-size: calc(0.9 * var(--field-size));
   --darkest-green: #0d1f22;
   --green: #1b2f33;
   --light: #0077b6;
@@ -166,8 +166,8 @@
 .field.x::after {
   content: "";
   position: absolute;
-  width: calc(var(--circle-size) * 0.2);
-  height: var(--circle-size);
+  width: calc(var(--o-size) * 0.2);
+  height: var(--o-size);
   background-color: var(--grey);
 }
 .field.x::before {
@@ -177,10 +177,10 @@
   transform: rotate(-45deg);
 }
 
-.field.circle::after {
+.field.o::after {
   content: "";
-  width: calc(var(--circle-size) * 0.8);
-  height: calc(var(--circle-size) * 0.8);
+  width: calc(var(--o-size) * 0.8);
+  height: calc(var(--o-size) * 0.8);
   background-color: transparent;
   border-radius: 50%;
   border: 15px var(--grey) solid;
@@ -201,7 +201,7 @@
   transform: rotate(-45deg);
 }
 
-.circle::after {
+.o::after {
   content: "";
   width: calc(var(--x-size) * 0.8);
   height: calc(var(--x-size) * 0.8);
@@ -216,7 +216,7 @@
   background-color: var(--darkest-green);
 }
 
-.circle.choosen::after {
+.o.choosen::after {
   border: 5px var(--darkest-green) solid;
 }
 
